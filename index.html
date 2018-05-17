@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+	<style type="text/css">
+		.success, .error{
+			color:#FFFFFFFF;
+			padding: 5px;
+			margin: 5px 0 15px 0;
+		}
+		.success{
+			background: #4E9A06FF
+		}
+		.error{
+			background: #EF2929FF
+		}
+		#submit:hover{
+			background-color:#4E9A06FF;
+		}
+
+	</style>
+
+	<title>Book List</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Add Book</h1>
+		<form  id="book-form">
+			<div>
+				<label for="title">Title</label>
+				<input type="text" id="title" class="u-full-width">
+			</div>
+			<div>
+				<label for="author">Author</label>
+				<input type="text" id="author" class="u-full-width">
+			</div>
+			<div>
+				<label for="isbn">ISBN#</label>
+				<input type="text" id="isbn" class="u-full-width">
+			</div>
+			<div>
+			<input type="submit" id="submit" value="Submit" class="u-full-width">
+			</div>
+		</form>	
+		<hr>
+		<table class="u-full-width">
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Author</th>
+					<th>ISBN</th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<tbody id = "book-list">
+
+			</tbody>
+		</table>
+
+	</div>
+
+	<script type="text/javascript" src = "es6.js"></script>
+</body>
+</html>
